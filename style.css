@@ -188,7 +188,7 @@ body
 }
 .text-editor
 {
-    padding: 40px;
+    padding: 25px;
     background-color: #10141E;
     border-radius: 5px;
     font-size: 20px;
@@ -198,7 +198,7 @@ body
 
 .terminal
 {
-    padding: 40px;
+    padding: 25px;
     background-color: #060606;
     border-radius: 5px;
     font-size: 20px;
@@ -243,6 +243,7 @@ padding-bottom: 4px;
     flex-direction: row;
     justify-content: left;
     gap: 1vw;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -288,7 +289,7 @@ padding-bottom: 4px;
 .education-content
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 40px;
     column-gap: 40px;
@@ -388,7 +389,7 @@ padding-bottom: 4px;
     0px 2px 4px rgba(11, 6, 73, 0.1), 
     0px 4px 8px rgba(11, 6, 73, 0.08), 
     0px 8px 16px rgba(11, 6, 73, 0.06);
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: bold;
 
     transition: all .5s ease-in; 
@@ -488,22 +489,51 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 @media only screen and (max-width: 1000px) {
 
 
+    .education-content
+    {
+        column-gap: 5px;
+        row-gap: 10px;
+    }
+
+    .ide-navigation h2
+    {
+        font-size: 1.1rem;
+    }
     .main-grid-item
     {
         grid-column: 1 / -1;
+
+
     }
 
     .ide-editor
     {
        
-        width: 80%;
+       
+        width: 95%;
     }
 
+
+    .text-editor
+    {
+        font-size: 1rem;
+    }
+    .terminal
+    {
+        font-size: 1rem;
+
+
+    }
+    .education-skill
+    {
+        font-size: 8px;
+
+    }
 
     .skill1
 {
     align-self: center;
-    grid-column: 3 /4;
+    grid-column: 2 /3;
     grid-row: 3 / 4;
 
 }
@@ -512,7 +542,7 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 {
 
     align-self: center;
-    grid-column: 3 /4;
+    grid-column: 2 /3;
     grid-row: 4 / 5;
 
 
