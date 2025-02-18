@@ -16,12 +16,13 @@ body
 
 .container
 {
-    display: flex;
 
+    width: 98%;
+    margin: 0 auto;
     
 }
 
-
+/* 
 .navigation-bar
 {
     background-color: #060606;
@@ -45,10 +46,7 @@ body
 {
     color: #3ed037;
 }
-.main-article
-{
-    margin-left: 95px;
-}
+
 .page-logo
 {
     font-size: 40px;
@@ -67,7 +65,7 @@ body
     font-size: 37px ;
     gap: 60px;
 
-}
+} */
 
 .start-aside
 {
@@ -252,7 +250,7 @@ padding-bottom: 4px;
 {
     text-align: center;
     padding: 20px;
-    margin-left: 95px;
+
     background-color: #10141E;
     font-size: 25px;
 }
@@ -277,23 +275,26 @@ padding-bottom: 4px;
 
 .education-container
 {
-    margin-left: 95px;
+
+
+    margin: 0 auto;
     background: #090911;
     padding: 50px;
+
+    
 }
 
 
 .education-content
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 40px;
     column-gap: 40px;
+    
 
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
+
 
 }
 .edu-title
@@ -324,7 +325,7 @@ padding-bottom: 4px;
     0px 8px 16px rgba(11, 6, 73, 0.06);
     display: flex;
     justify-content: center;
-    align-items: start;
+
     min-width: 300px;
     gap: 30px;
     vertical-align:middle;
@@ -468,11 +469,7 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 
 @media only screen and (max-width: 1500px) {
 
-    .education-skill
-    {
-        height: 80px;
-        width: 125px;
-    }
+
     .main-grid-item
     {
         flex-direction: column;
@@ -491,19 +488,22 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 @media only screen and (max-width: 1000px) {
 
 
-    .education-content
+    .main-grid-item
     {
-        margin-left: 25%;
+        grid-column: 1 / -1;
     }
+
     .ide-editor
     {
-        width: auto;
+       
+        width: 80%;
     }
 
 
     .skill1
 {
-    grid-column: 2 /3;
+    align-self: center;
+    grid-column: 3 /4;
     grid-row: 3 / 4;
 
 }
@@ -511,15 +511,15 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 .skill2
 {
 
-  
-    grid-column: 2 /3;
+    align-self: center;
+    grid-column: 3 /4;
     grid-row: 4 / 5;
 
 
 }
 .skill4
 {
-
+    align-self: center;
     grid-column: 1 / 2;
     grid-row: 3 /4;
 
@@ -531,10 +531,11 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 
 .skill5
 {
+    align-self: center;
     grid-column: 1 / 2;
     grid-row: 4 /5;
 
-}
+} 
 
 }
 
