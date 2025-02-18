@@ -526,7 +526,7 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
     }
     .education-skill
     {
-        font-size: 8px;
+        font-size: 0.6rem;
 
     }
 
@@ -566,6 +566,11 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
     grid-row: 4 /5;
 
 } 
+
+.page-footer
+{
+    font-size: 0.8rem;
+}
 
 }
 
