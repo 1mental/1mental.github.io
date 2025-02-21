@@ -28,7 +28,7 @@ certificates.forEach((item) => {
 
     item.addEventListener('click', function(){
 
-        document.getElementById('image-preview').src = item.src;
+        ImagePreview.src = item.src;
         document.getElementById('img-show').style.display = 'flex';
         document.body.style.overflow = 'hidden';
 
