@@ -4,32 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Y0usef</title>
-    <meta name="description" content="My portfolio page" />
+    <meta name="description" content="Rising to the moon.." />
+    <link rel="icon" type="image/x-icon" href="terminal-1329319944514935040_24px.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
+    
+
+    <div class="image-show" id="img-show">
+        <button class="close-btn" onclick="CloseImageShow()">X</button>
+        <img src="" alt="Certificate Image" id="image-preview">
+    </div>
+
+
+    <header class="navigation-bar" >
+        <i class="fa-solid fa-terminal page-logo"></i>
+        <nav >
+
+
+             <a href="#home"><i class="fa-solid fa-house-chimney nav-anchor"></i></a>
+            <a href="#edu"><i class="fa-solid fa-school nav-anchor"></i></a> 
+           <a href="#certificates"><i class="fa-solid fa-certificate nav-anchor"></i></a> 
+        </nav>
+    </header>
+    <script src="script.js"></script>
     <div class="container">
-
-        <!-- <header class="navigation-bar">
-            <nav>
-                <i class="fa-solid fa-terminal page-logo"></i>
-
-                 <a href="#"><i class="fa-solid fa-house-chimney nav-anchor"></i></a>
-                <a href="#edu"><i class="fa-solid fa-info nav-anchor"></i></a> 
-               <a href="#"><i class="fa-solid fa-question nav-anchor"></i></a> 
-            </nav>
-        </header> -->
 
 
       
 
-        <article class="main-article">
+        <article class="main-article" id="home">
+
             <aside class="start-aside">
                 <div class="image-aside">
+
+            
                     <h2>Yousef Zain</h2>
                     <div class="contacts">
                         <div class="contact-icon"><a href="https://www.linkedin.com/in/yousef-zain-aldeen-5930b7319/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
@@ -40,80 +54,81 @@
                 </div>
             </aside>
             
-            <div class="ides-container">
-              
-                <aside class="ide-editor virtual-code">
-                    <div class="ide-navigation">
-                        <h2>✨ Virtual Code</h2>
-                    <nav>
-                        <div class="controls" style="background-color: green;"></div>
-                        <div class="controls" style="background-color: orange;"></div>
-                        <div class="controls" style="background-color: red;"></div>
-                    </nav>
-                    </div>
-      
-                    <div class="text-editor">
-                        <span style="color: gray;"> <em>// Current File: personal.c</em></span><br> <br><br>
-                        <span style="color: grey;">#</span><span style="color:pink;">include</span><span style="color:gold;">&lt;stdio.h&gt;</span><br><br>
-                       <span style="color: #3c82eb;">int</span> main(<span style="color: #3c82eb;">void</span>)</br>
-                        {<br>
-                            &nbsp;&nbsp;&nbsp;<span style="color: #3c82eb;">const char</span> <span style="font-size: 1rem;">*</span> Name = <span style="color: #8bf444;">"Yousef Zain Aldeen"</span>;<br>
-                            &nbsp;&nbsp;&nbsp;<span style="color: #3c82eb;">const char</span> <span style="font-size: 1rem;">*</span> Major = <span style="color: #8bf444;">"Computer Engineer 💻"</span>;<br>
-                            &nbsp;&nbsp;&nbsp;<span style="color: #3c82eb;">const char</span> <span style="font-size: 1rem;">*</span> Status = <span style="color: #8bf444;">"Undergraduate 🎓"</span>;<br>
-                            &nbsp;&nbsp;&nbsp;<span style="color: #3c82eb;">int</span> Age = <span style="color: #0edcd9;">22</span>;<br>
-                            &nbsp;&nbsp;&nbsp;<span style="color:gold;">printf</span>(<span style="color: #8bf444;">"Name: %s\nMajor: %s\nStatus: &nbsp;&nbsp;&nbsp;%s\nAge: %d\n"</span>,Name,Major,Status,Age);<br>
-                            &nbsp;&nbsp;&nbsp;<span style="color: #3c82eb;">return</span> <span style="color: #0edcd9;">1</span>;</br>
-                        } 
-                    </div>
-                </aside>
-
-
-                <aside class="ide-editor">
-                    <div class="ide-navigation">
-                        <h2>> shell</h2>
-                    <nav>
-                        <div class="controls" style="background-color: green;"></div>
-                        <div class="controls" style="background-color: orange;"></div>
-                        <div class="controls" style="background-color: red;"></div>
-                    </nav>
-                    </div>
-      
-                    <div class="terminal">
-                        <p><span style="color: #cf0000;">Yousef@zain</span><span style="color: #10f700;">~#</span>&nbsp;&nbsp;&nbsp;pwd</p>
-                        <p>/home/yousef/programs</p>                <br>
-                        <p><span style="color: #cf0000;">Yousef@zain</span><span style="color: #10f700;">~#</span>&nbsp;&nbsp;&nbsp;ls</p>
-        
-                        <ul class="ls-command">
-                            <li>personal.c</li>
-                            <li>evil.c</li>
-                            <li>pwnkit.c</li>
-                        </ul> <br>
-
-                        <p><span style="color: #cf0000;">Yousef@zain</span><span style="color: #10f700;">~#</span>&nbsp;&nbsp;&nbsp;gcc personal.c -o personal</p><br>
-                        <p><span style="color: #cf0000;">Yousef@zain</span><span style="color: #10f700;">~#</span>&nbsp;&nbsp;&nbsp;ls</p>
-                        <ul class="ls-command">
-                            <li>personal.c</li>
-                            <li>evil.c</li>
-                            <li>pwnkit.c</li>
-                            <li style="color:#10f700;">personal</li>
-                        </ul> <br>
-                        <p><span style="color: #cf0000;">Yousef@zain</span><span style="color: #10f700;">~#</span>&nbsp;&nbsp;&nbsp;chmod +x personal</p><br>
-                        <p><span style="color: #cf0000;">Yousef@zain</span><span style="color: #10f700;">~#</span>&nbsp;&nbsp;&nbsp;./personal</p>
-                        <p>Name: Yousef Zain aldeen</p>
-                        <p>Major: Computer Engineer 💻</p>
-                        <p>Status: Undergraduate 🎓</p>
-                        <p>Age: 22</p>
-                    </div>
-                </aside>
       
         </div>
 
 
         </article>
 
-    </div>
 
 
+        <div class="ides-container">
+              
+            <aside class="ide-editor virtual-code">
+                <div class="ide-navigation">
+                    <h2>✨ Virtual Code</h2>
+                <nav>
+                    <div class="controls" style="background-color: green;"></div>
+                    <div class="controls" style="background-color: orange;"></div>
+                    <div class="controls" style="background-color: red;"></div>
+                </nav>
+                </div>
+  
+                <div class="text-editor">
+                    <span style="color: gray;"> <em>// Current File: personal.c</em></span><br> <br><br>
+                    <span style="color: grey;">#</span><span style="color:pink;">include</span><span style="color:gold;">&lt;stdio.h&gt;</span><br><br>
+                   <span style="color: #3c82eb;">int</span> main(<span style="color: #3c82eb;">void</span>)</br>
+                    {<br>
+                        &nbsp;&nbsp;&nbsp;<span style="color: #3c82eb;">const char</span> <span style="font-size: 1rem;">*</span> Name = <span style="color: #8bf444;">"Yousef Zain Aldeen"</span>;<br>
+                        &nbsp;&nbsp;&nbsp;<span style="color: #3c82eb;">const char</span> <span style="font-size: 1rem;">*</span> Major = <span style="color: #8bf444;">"Computer Engineer 💻"</span>;<br>
+                        &nbsp;&nbsp;&nbsp;<span style="color: #3c82eb;">const char</span> <span style="font-size: 1rem;">*</span> Status = <span style="color: #8bf444;">"Undergraduate 🎓"</span>;<br>
+                        &nbsp;&nbsp;&nbsp;<span style="color: #3c82eb;">int</span> Age = <span style="color: #0edcd9;">22</span>;<br>
+                        &nbsp;&nbsp;&nbsp;<span style="color:gold;">printf</span>(<span style="color: #8bf444;">"Name: %s\nMajor: %s\nStatus: &nbsp;&nbsp;&nbsp;%s\nAge: %d\n"</span>,Name,Major,Status,Age);<br>
+                        &nbsp;&nbsp;&nbsp;<span style="color: #3c82eb;">return</span> <span style="color: #0edcd9;">1</span>;</br>
+                    } 
+                </div>
+            </aside>
+
+
+            <aside class="ide-editor">
+                <div class="ide-navigation">
+                    <h2>> shell</h2>
+                <nav>
+                    <div class="controls" style="background-color: green;"></div>
+                    <div class="controls" style="background-color: orange;"></div>
+                    <div class="controls" style="background-color: red;"></div>
+                </nav>
+                </div>
+  
+                <div class="terminal">
+                    <p><span style="color: #cf0000;">Yousef@zain</span><span style="color: #10f700;">~#</span>&nbsp;&nbsp;&nbsp;pwd</p>
+                    <p>/home/yousef/programs</p>                <br>
+                    <p><span style="color: #cf0000;">Yousef@zain</span><span style="color: #10f700;">~#</span>&nbsp;&nbsp;&nbsp;ls</p>
+    
+                    <ul class="ls-command">
+                        <li>personal.c</li>
+                        <li>evil.c</li>
+                        <li>pwnkit.c</li>
+                    </ul> <br>
+
+                    <p><span style="color: #cf0000;">Yousef@zain</span><span style="color: #10f700;">~#</span>&nbsp;&nbsp;&nbsp;gcc personal.c -o personal</p><br>
+                    <p><span style="color: #cf0000;">Yousef@zain</span><span style="color: #10f700;">~#</span>&nbsp;&nbsp;&nbsp;ls</p>
+                    <ul class="ls-command">
+                        <li>personal.c</li>
+                        <li>evil.c</li>
+                        <li>pwnkit.c</li>
+                        <li style="color:#10f700;">personal</li>
+                    </ul> <br>
+                    <p><span style="color: #cf0000;">Yousef@zain</span><span style="color: #10f700;">~#</span>&nbsp;&nbsp;&nbsp;chmod +x personal</p><br>
+                    <p><span style="color: #cf0000;">Yousef@zain</span><span style="color: #10f700;">~#</span>&nbsp;&nbsp;&nbsp;./personal</p>
+                    <p>Name: Yousef Zain aldeen</p>
+                    <p>Major: Computer Engineer 💻</p>
+                    <p>Status: Undergraduate 🎓</p>
+                    <p>Age: 22</p>
+                </div>
+            </aside>
+
+            </div>
     <article class="education-container" id="edu">
         <h3 class="edu-title">Education 📚</h3>
 
@@ -136,6 +151,54 @@
             <div class="education-skill skill5"><h3>Coop open 🔓</h3></div>
         </div>
     </article>
+
+
+    <section class="certificates-container" id="certificates">
+        <h2 class="certificates-title">Certifications 📜</h2>
+        <div class="certificates-content">
+            <ul class="certificates-list">
+                <li class="certificate">
+                    <img src="images/certificates/Cisco Python Essentials.png" alt="Cert" class="Cert-Image">
+
+                    <h3 class="certificate-name">Python Essentials 2</h3>
+                    <p class="certificate-date">Jan 25, 2025</p>                    
+                    <a href="https://www.credly.com/badges/e6a22317-4e89-4095-95a3-532699f5aa69" class="certificate-link" target="_blank">Link</a>
+                </li>
+                <li class="certificate">
+                    <img src="images/certificates/C-Sharp.png" class="Cert-Image" alt="Cert">
+
+                    <h3 class="certificate-name">C# (Basic)</h3>
+                    <p class="certificate-date">Nov 20, 2021</p>
+                    <a href="https://www.hackerrank.com/certificates/bb9e556a1019" class="certificate-link"  target="_blank">Link</a>                
+   
+                </li>
+                <li class="certificate">
+                    <img src="images/certificates/Java.png" class="Cert-Image" alt="Cert">
+
+                    <h3 class="certificate-name">Java (Basic)</h3>
+                    <p class="certificate-date">Jan 26, 2025</p>
+                    <a href="https://www.hackerrank.com/certificates/a2749e0b6255" class="certificate-link" target="_blank">Link</a>
+   
+                </li>
+                <li class="certificate">
+                    <img src="images/certificates/CSS.png" class="Cert-Image" alt="Cert">
+
+                    <h3 class="certificate-name">Python Essentials 2</h3>
+                    <p class="certificate-date">Feb 18, 2025</p>
+                    <a href="https://www.hackerrank.com/certificates/ce9e73803b87" class="certificate-link" target="_blank">Link</a>                    
+   
+                </li>
+
+            </ul>
+            <script src="script.js">
+
+            </script>
+        </div>
+    </section>
+
+    </div>
+
+
 
     <footer class="page-footer">
         <p>All copyrights &copy; belongs to Yousef Zain</p>
