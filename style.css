@@ -147,13 +147,10 @@ header.sticky a:link, header.sticky a:visited
     0px 8px 16px rgba(0, 0, 0, 0.06);
     max-width: 800px;
     max-height: 55px;
-    transition: all .8s ease-in-out; 
+
 
 }
-.contacts:hover
-{
-    transform: scale(1.05);
-}
+
 .contacts .contact-icon a
 {
     color: white;
